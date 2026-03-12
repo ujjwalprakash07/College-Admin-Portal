@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Students Management</title>
+<link rel="stylesheet" href="styleUI.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>College Admin</h2>
+
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="student.html">Students</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="#">Faculty</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+
+</div>
+
+
+<!-- Main Content -->
+
+<div class="main">
+
+<h1>Students</h1>
+
+<button onclick="showForm()">Add Student</button>
+
+<br><br>
+
+<table border="1" width="100%" id="studentTable">
+
+<tr>
+<th>Registration ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Department</th>
+<th>Contact</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+
+<!-- Add Student Form -->
+
+<div id="studentForm" style="display:none">
+
+<h3>Add Student</h3>
+
+<input type="text" id="registration_id" placeholder="Registration ID">
+
+<input type="text" id="student_name" placeholder="Student Name">
+
+<input type="text" id="Email" placeholder="Email">
+
+<input type="text" id="department" placeholder="Department">
+
+<input type="text" id="contact" placeholder="Contact">
+
+<button onclick="addStudent()">Add Student</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="student.js"></script>
+
+</body>
+
+</html>
