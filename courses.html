@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Courses Management</title>
+<link rel="stylesheet" href="styleUI.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>College Admin</h2>
+
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="students.html">Students</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="faculty.html">Faculty</a></li>
+<li><a href="login.html">Logout</a></li>
+</ul>
+
+</div>
+
+
+<!-- Main Content -->
+
+<div class="main">
+
+<h1>Courses</h1>
+
+<button onclick="showForm()">Add Course</button>
+
+<br><br>
+
+<table border="1" width="100%" id="courseTable">
+
+<tr>
+<th>Course ID</th>
+<th>Course Name</th>
+<th>Credits</th>
+<th>Department ID</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+
+<!-- Add Course Form -->
+
+<div id="courseForm" style="display:none">
+
+<h3>Add Course</h3>
+
+<input type="text" id="course_id" placeholder="Course ID">
+
+<input type="text" id="course_name" placeholder="Course Name">
+
+<input type="number" id="credits" placeholder="Credits">
+
+<input type="text" id="department_id" placeholder="Department ID">
+
+<button onclick="addCourse()">Add</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="courses.js"></script>
+
+</body>
+
+</html>
